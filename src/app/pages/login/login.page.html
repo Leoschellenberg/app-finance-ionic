@@ -1,0 +1,26 @@
+<ion-content color="primary">
+    <div class="login">
+        <ion-icon name="bar-chart-outline" class="logo"></ion-icon>
+
+        <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="password" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" color="light" class="ion-margin-top" (click)="login()">Acessar</ion-button>
+
+        <ion-label class="ion-margin-top">
+            ou
+        </ion-label>
+        <ion-button expand="block" color="medium" class="ion-margin-top" (click)="navigate()">
+            Criar Conta
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+
+        <ion-img button src="assets/icon_facebook.svg" class="ion-padding"></ion-img>
+
+    </div>
+</ion-content>

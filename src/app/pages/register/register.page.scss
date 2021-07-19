@@ -1,0 +1,31 @@
+.register {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ion-item {
+        border-radius: 10px;
+        width: 85%;
+        height: auto;
+        --background: var(--ion-color-primary-tint);
+        color: #fff;
+    }
+    ion-button {
+        width: 85%;
+        font-weight: bold;
+        align-content: center;
+        justify-content: space-between;
+    }
+    ion-icon {
+        display: flex;
+        justify-content: space-between;
+    }
+    ion-button:first-of-type {
+        margin-top: 3rem;
+    }
+    ion-img {
+        display: flex;
+        margin-top: 5rem;
+    }
+}

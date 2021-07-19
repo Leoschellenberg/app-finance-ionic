@@ -1,0 +1,40 @@
+<ion-app>
+    <ion-menu menuId="main-menu" contentId="main">
+        <ion-content>
+            <div class="menu-header-bg"></div>
+            <div class="header-content">
+                <img src="https://github.com/Leoschellenberg.png" alt="">
+                <ion-label>
+                    <h2>Leonardo</h2>
+                    <p>Martins Schellenberg</p>
+                </ion-label>
+            </div>
+
+            <ion-list class="menu-items" lines="none">
+                <ion-menu-toggle auto-hide="true">
+                    <ion-item button (click)="navigateDash()" routerLinkActive="active">
+                        <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+                    </ion-item>
+                </ion-menu-toggle>
+
+                <ion-menu-toggle auto-hide="true">
+                    <ion-item button (click)="navigateProfile()">
+                        <ion-icon name="person-outline"></ion-icon>Perfil
+                    </ion-item>
+                </ion-menu-toggle>
+
+                <ion-item button>
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Ajuda
+                </ion-item>
+
+                <ion-menu-toggle auto-hide="true">
+                    <ion-item button class="active" (click)="logout()">
+                        <ion-icon name="exit-outline"></ion-icon>Sing Out
+                    </ion-item>
+                </ion-menu-toggle>
+
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet [swipeGesture]="false" id="main"></ion-router-outlet>
+</ion-app>

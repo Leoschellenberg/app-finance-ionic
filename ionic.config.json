@@ -1,0 +1,7 @@
+{
+  "name": "TradeFinance",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
